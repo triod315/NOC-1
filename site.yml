@@ -1,0 +1,11 @@
+---
+- name: install apache, php, mysql server, wordpress
+  hosts: all
+  become: yes
+
+  roles:
+#    - common
+    - web
+    - mysql
+    - wordpress
+
